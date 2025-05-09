@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTech Essentials - Sustainable Technology</title>
+  <meta name="description" content="EcoTech Essentials offers eco-friendly tech gadgets that combine innovation with sustainability. Discover our range of sustainable technology products.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h1>EcoTech Essentials</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#quotes">Quotes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Sustainable Technology for a Greener Future</h1>
+      <p>Discover eco-friendly tech gadgets that combine innovation with sustainability</p>
+      <button class="btn btn-primary">Shop Now</button>
+      <button class="btn btn-outline">Take the Quiz</button>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="container">
+      <h2>Our Eco-Friendly Products</h2>
+      <p>Sustainable technology that doesn't compromise on performance</p>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" alt="Eco-friendly laptop">
+          <h3>Eco Laptop Pro</h3>
+          <p>Made from recycled materials with long battery life</p>
+          <button class="btn btn-secondary">Learn More</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" alt="Solar charger">
+          <h3>Solar Power Bank</h3>
+          <p>Charge your devices using clean solar energy</p>
+          <button class="btn btn-secondary">Learn More</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" alt="Smart thermostat">
+          <h3>Eco Thermostat</h3>
+          <p>Reduce energy consumption with smart temperature control</p>
+          <button class="btn btn-secondary">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About EcoTech Essentials</h2>
+          <p>We're on a mission to make technology sustainable without compromising on performance. Our products are designed with the environment in mind, using recycled materials and energy-efficient components.</p>
+          <p>Founded in 2020, we've been at the forefront of eco-friendly tech innovation, creating products that reduce carbon footprints while meeting the demands of modern life.</p>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1" alt="Our team working">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quiz" id="quiz">
+    <div class="container">
+      <h2>Find Your Perfect Eco-Tech Match</h2>
+      <p>Take our quick quiz to discover which sustainable tech product is right for you</p>
+      
+      <div class="quiz-card">
+        <div class="quiz-content">
+          <!-- This will be dynamically populated by JavaScript -->
+          <div id="quiz-container"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quotes" id="quotes">
+    <div class="container">
+      <h2>Daily Eco Inspiration</h2>
+      <p>Quotes that remind us why sustainability matters</p>
+      
+      <div class="quote-card">
+        <div class="quote-content" id="quote-content">
+          <div id="loading-spinner" class="spinner hidden"></div>
+          <div id="quote-display">
+            <p id="quote-text" class="quote-text"></p>
+            <p id="quote-author" class="quote-author"></p>
+            <p id="quote-error" class="quote-error hidden"></p>
+          </div>
+        </div>
+        <button id="refresh-quote" class="btn btn-outline">
+          <span class="refresh-icon">↻</span>
+          New Quote
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>EcoTech Essentials</h3>
+          <p>Sustainable technology for a greener future</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Email: info@ecotechessentials.com</p>
+          <p>Phone: (555) 123-4567</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EcoTech Essentials. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast hidden">
+    <div class="toast-content">
+      <p id="toast-message"></p>
+      <p id="toast-description" class="toast-description"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
