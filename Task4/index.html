@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="todo-container">
+    <div class="header">
+      <h1>📝 To-Do List</h1>
+      <button id="darkModeToggle">🌙</button>
+    </div>
+    
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Task name" />
+      <select id="priorityInput">
+        <option value="low">🟩 Low</option>
+        <option value="medium">🟨 Medium</option>
+        <option value="high">🟥 High</option>
+      </select>
+      <input type="date" id="dateInput" />
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="🔍 Search tasks..." onkeyup="filterTasks()" />
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
